@@ -12,4 +12,9 @@ describe Dice do
     expect(subject.roll).to (be >=1).and (be <=6)
   end
 
+  it 'player should be able to roll any number of dice at any time' do
+    expect(subject).to respond_to(:number)
+  end
+
+
 end
