@@ -1,11 +1,11 @@
 class Dice
 
-  def roll
-    rand(1..6)
-  end
-
-  def number
-
+  def roll(number)
+    arr = []
+    number.times do |die|
+      arr << rand(1..6)
+    end
+    arr
   end
   
 end
